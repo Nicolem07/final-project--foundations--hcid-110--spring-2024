@@ -1,0 +1,11 @@
+// Grid-related Variables
+$grid-column: 60px;
+$grid-gutter: calc($grid-column / 3);
+$grid-unit: calc($grid-column + $grid-gutter);
+
+$width--card: calc(10 * $grid-unit);
+$width--image: calc(6 * $grid-unit);
+$width--card-two: calc(10 * $grid-unit);
+
+
+

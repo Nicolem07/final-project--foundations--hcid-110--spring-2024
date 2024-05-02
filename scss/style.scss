@@ -1,2 +1,179 @@
 @use 'variables' as *;
 @use 'reset' as *;
+
+body {
+  background-color: #F2F1ED;
+}
+
+main {
+height:2500px;
+margin:auto;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+width: calc(15 * $grid-unit);
+max-width: 100%;
+height: 170px;
+background-color: white;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+p{
+  text-align: center;
+  font-family: Outfit, sans-serif;
+  font-size: 30px;
+  line-height: 50px;
+  margin-bottom: 50px;
+
+}
+
+h1 {
+  font-family: "Indie Flower", cursive;
+  font-size: 70px;
+  font-weight: 400;
+  margin-top: 50px;
+  padding: 0 20px;
+  background-color: white;
+}
+
+.font {
+  font-family: Outfit, sans-serif;
+  font-size: 30px;
+  font-weight: medium;
+  margin-top: 70px;
+  color: black;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+}
+
+.line {
+  position: absolute;
+  background-color: #FFD0C1;
+  height: 5px;
+  width: 100%;
+  top: 170px;
+  left: 0;
+}
+
+.text {
+  font-family: Outfit, sans-serif;
+  font-size: 50px;
+  margin-top: 100px;
+  margin-left: 20px;
+  color: black;
+  width: 100%;
+
+}
+.text-two {
+  font-family: Outfit, sans-serif;
+  font-size: 30px;
+  margin-top: 130px;
+  margin-left: 20px;
+  color: grey;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+
+}
+
+.title {
+  font-family: Outfit, sans-serif;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.line-two {
+  background-color: #FFD0C1;
+  height: 5px;
+  width: 100%;
+  margin-top: 50px;
+  left: 0;
+}
+
+.hero-image {
+  position: absolute;
+  width: 100%;
+  top: 175px;
+  left: 0;
+  z-index: 1;
+}
+
+.spacer {
+  margin-top: 1100px;
+  max-width: 100%;
+
+  @media (max-width: 1210px) {
+    margin-top: 900px;
+  }
+
+  @media (max-width: 1024px) {
+    margin-top: 750px;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 600px;
+  }
+
+  @media (max-width: 600px) {
+    margin-top: 400px;
+  }
+
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: $width--card;
+  flex: 0 0 45%;
+  margin: 30px;
+  text-align: center;
+
+  &--image  {
+    width: $width--image;
+  }
+
+  &--paragraph {
+    margin-top: 50px;
+    font-family: Outfit, sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+  }
+
+}
+
+.card-two {
+  width: $width--card-two;
+  flex: 0 0 45%;
+  margin: 30px;
+  text-align: center;
+
+  &--image  {
+    width: $width--image;
+  }
+
+  &--paragraph {
+    margin-top: 50px;
+    font-family: Outfit, sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+  }
+
+}
+.spacer-two {
+  margin-top: 100px;
+  max-width: 100%;
+}
+
+.red-text {
+  color: #8B271F;
+}
